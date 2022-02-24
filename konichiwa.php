@@ -21,17 +21,16 @@ $message = '';
 foreach ($userListInput as $user){
 if($username === $user['username']){
     if($user['language'] ==='vi'){
-        $message = 'xin chao'.$username;
+        $message = 'xin chao '.$username;
     }elseif($user['language'] ==='en'){
         $message = 'hello'.$username;
     }elseif($user['language'] ==='ja'){
-        $message = 'konichiwa'.$username;
+        $message = 'こんにちは'.$username;
     }
 }
 }
 return $message;
 }
-echo getNameMessage('Tam', $userListInput)
-
+echo getNameMessage('Kazuki', $userListInput)
 
 ?>
